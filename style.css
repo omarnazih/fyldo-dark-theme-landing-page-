@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* 
+font-family: 'Raleway', sans-serif;  // headers and call to action
+font-family: 'Open Sans', sans-serif; // body font
+*/
+
+:root{
+
+  /* Screens variables */
+  --mobile-width : 375px;
+  --desktop-width : 1440px;
+
+  /* Colors */
+  /* Primary */
+  --intro-email-background :hsl(217, 28%, 15%);
+  --main-background: hsl(218, 28%, 13%);
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonials-background: hsl(219, 30%, 18%);
+
+  /* Accent */
+  --call-to-action-gradient: #65e2d9;
+  --call-to-action-gradient: #339ecc;
+  --cta-gradient:linear-gradient(to right top, #65e2d9, #49d2da, #33c1d8, #2bb0d4, #339ecc);
+
+  /* White */
+  --White: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --small-body-font:0.875rem;
+  --body-font:1rem;
+
+  --normal-weight:400;
+  --heavy-weight:700;
+}
+
+/* 
+  General Declrations
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--body-font);
+  line-height: 1.5;
+  color: var(--White);
+  background-color: var(--intro-email-background);
+}
+
+.container{
+  width: 90%;
+  max-width: var(--desktop-width);
+  margin: 0 auto;
+}
+
+a{
+  color: var(--White);
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.btn{
+  background-image: var(--cta-gradient);
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  border-radius: 25px;
+  width: 250px;
+  padding: 15px;
+}
+
+ion-icon{
+  color: var(--call-to-action-gradient);
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+/********************************************* HEADER ******************************************/
+
+/* 
+  Nav-bar
+*/
+
+
+nav{
+  display: flex;
+  padding: 50px 0;
+}
+
+.nav-items,
+.logo{
+  flex: 1;
+}
+
+.logo img{
+  width: 150px;
+}
+
+.nav-items{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-items li:not(:last-child){ 
+  /* All elments but the last li well get this effect */
+  margin-right: 100px;
+}
+
+/* 
+  Header illustrations
+*/
+
+.illustration{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.illustration-text{
+  width: 700px;
+}
+
+.illustration-text h1{
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  margin: 40px 0;
+}
+
+.illustration-text h4{
+  font-weight: var(--small-body-font);
+  margin: 40px 0;
+}
+
+.curvy-bg{
+  position: absolute;
+  top: 620px;
+  z-index: -1;  
+}
+
+/********************************************* Content ******************************************/
+
+/* 
+  Survices
+*/
+
+.survices{
+  margin-top: 200px;
+  margin-bottom: 50px;
+  background-color: var(--main-background);
+}
+
+.survices h4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.survices p{
+  font-weight: 400;
+  width: 400px;
+}
+
+.survices-grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 100px 20px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
