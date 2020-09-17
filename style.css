@@ -208,6 +208,10 @@ header{
   Productive
 */
 
+.stay-productive{
+  margin: 150px 0;
+}
+
 .productive-flex-container{
   display: flex;
   justify-content: center;
@@ -234,9 +238,84 @@ header{
 .do-more a::after{
   content: '';
   display: block;
-  width: 170px;
+  width: 10.5rem;
   height: 1px;
   background: #62E0D9;
+}
+
+/* 
+  Recommendation
+*/
+
+.recommendation{
+  margin: 150px 0;
+}
+
+.recommendation-container{
+  display: flex;
+  gap:30px;
+} 
+
+.recommendation-container .rec-box{
+  border-radius: 5px;
+  background-color: var(--testimonials-background);
+  padding: 40px 20px 40px 20px;
+  box-shadow: 15px 10px 5px var(--footer-background);
+}
+
+.recommendation-container .profile{
+  display: flex;
+}
+
+.rec-text {
+  margin-bottom: 20px;
+}
+
+.profile-name{
+  font-weight: 700;
+}
+
+.profile-slogan{
+  font-size: 0.7rem;
+  color:rgba(255, 255, 255, 0.603);
+}
+
+.recommendation-container img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* 
+  Contact
+*/
+
+.contact-container{
+  background-color: var(--intro-email-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0;
+  padding: 20px 60px;
+  width: fit-content;
+}
+
+.contact-container h1{
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.contact-container p{
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.contact-container .get-started{
+  border-radius: 25px;
+  height: 3rem;
+  width: 500px;
 }
 
 
