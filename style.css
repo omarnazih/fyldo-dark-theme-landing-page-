@@ -45,12 +45,20 @@ font-family: 'Open Sans', sans-serif; // body font
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: var(--body-font);
   line-height: 1.5;
   color: var(--White);
-  background-color: var(--intro-email-background);
+  background-color: var(--main-background);
 }
 
 .container{
@@ -119,6 +127,14 @@ nav{
   Header illustrations
 */
 
+header{ 
+  background: url(./images/bg-curvy-desktop.svg);
+  background-color: var(--intro-email-background);   
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:20% 100%;
+}
+
 .illustration{
   display: flex;
   flex-direction: column;
@@ -136,7 +152,7 @@ nav{
 .illustration-text h1{
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
-  margin: 40px 0;
+  margin: 40px 0; 
 }
 
 .illustration-text h4{
@@ -146,7 +162,8 @@ nav{
 
 .curvy-bg{
   position: absolute;
-  top: 620px;
+  top: 700px;
+  background: tomato;
   z-index: -1;  
 }
 
@@ -159,7 +176,7 @@ nav{
 .survices{
   margin-top: 200px;
   margin-bottom: 50px;
-  background-color: var(--main-background);
+  /* background-color: var(--main-background); */
 }
 
 .survices h4{
@@ -185,6 +202,120 @@ nav{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* 
+  Productive
+*/
+
+.stay-productive{
+  margin: 150px 0;
+}
+
+.productive-flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productive-img{
+  flex: 1;
+}
+
+.productive-text{
+  flex: 1;
+  margin-left: 50px;
+}
+
+.productive-text p{
+  margin: 20px 0;
+}
+
+.do-more a{
+  color: #62E0D9;
+}
+
+.do-more a::after{
+  content: '';
+  display: block;
+  width: 10.5rem;
+  height: 1px;
+  background: #62E0D9;
+}
+
+/* 
+  Recommendation
+*/
+
+.recommendation{
+  margin: 150px 0;
+}
+
+.recommendation-container{
+  display: flex;
+  gap:30px;
+} 
+
+.recommendation-container .rec-box{
+  border-radius: 5px;
+  background-color: var(--testimonials-background);
+  padding: 40px 20px 40px 20px;
+  box-shadow: 15px 10px 5px var(--footer-background);
+}
+
+.recommendation-container .profile{
+  display: flex;
+}
+
+.rec-text {
+  margin-bottom: 20px;
+}
+
+.profile-name{
+  font-weight: 700;
+}
+
+.profile-slogan{
+  font-size: 0.7rem;
+  color:rgba(255, 255, 255, 0.603);
+}
+
+.recommendation-container img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* 
+  Contact
+*/
+
+.contact-container{
+  background-color: var(--intro-email-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 0;
+  padding: 20px 60px;
+  width: fit-content;
+}
+
+.contact-container h1{
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.contact-container p{
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.contact-container .get-started{
+  border-radius: 25px;
+  height: 3rem;
+  width: 500px;
 }
 
 
